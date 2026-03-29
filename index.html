@@ -65,7 +65,7 @@
       :root {
         --logo-top:      2%;
         --slogan-top:    62%;
-        --buttons-top:   67%;
+        --buttons-top:   calc(67% - 1px);
         --logo-size:     230px;
         --slogan-size:   1.1rem;
         --buttons-size:  58px;
@@ -74,6 +74,10 @@
       .slogan {
         -webkit-text-stroke: 2px #ffffff;
       }
+
+      .slogan-l1, .slogan-l2 { display: block; }
+      .slogan-l1 { position: relative; top: -3px; }
+      .slogan-l2 { position: relative; top: -1px; }
 
       .buttons-wrapper {
         width: 90vw;
@@ -248,7 +252,7 @@
 
     <!-- Slogan -->
     <div class="slogan-wrapper">
-      <p class="slogan">Moodbased<br>Roguelike Survival!</p>
+      <p class="slogan"><span class="slogan-l1">Moodbased</span><span class="slogan-l2">Roguelike Survival!</span></p>
     </div>
 
     <!-- 下載按鈕 -->
